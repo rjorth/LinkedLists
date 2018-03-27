@@ -1,0 +1,18 @@
+/*Please see the attached files Node.java and LinkedList.java.
+In the problems below, record written answers in a document file (Word, plaintext, etc.) Submit your fully modified version of LinkedList.java. Do not submit or modify Node.java. Do not submit any files you may use to test your program.
+1. Describe in words the semantics of the method LinkedList.find. I.e. what does it do?
+2. Add an lpop method to LinkedList. Be sure to test it thoroughly!
+3. Add a new field length to LinkedList which keeps track of the length of
+the list. Modify existing methods to accommodate this new field.
+Make length private, but write a public method in LinkedList called
+length which returns the value of the field length.
+4. After including length, rewrite find so that it returns the positive index
+of the found item, and returns -1 otherwise.
+5. Inthemethodfind,replacetheexpressiontracker.cargo.equals(item) with (the more natural) tracker.cargo == item. Then test find on a list of fairly large integers. What goes wrong?
+6. Do a Google search to find out how "==" is different from .equals() in Java. Explain (briefly!) in your own words this difference.
+7. Write a method in LinkedList with signature void remove(T item) which removes the first occurrence of item in the list. If item is not in the list, do nothing, but don’t throw an exception.
+8. Write a method in LinkedList with signature void insert(T item, int i) which inserts a node with cargo item before the node currently in the ith position (if any) and after the node in the i-1st position (if any). If i exceeds the length of the list minus one, append item to the end of the list. If i is less than zero, left append it to the list. Test your method, particularly with small and empty lists.
+9. Write a static method in LinkedList which pastes two Integer lists to- gether. The signature should be
+     public static LinkedList<Integer> paste(LinkedList<Integer> li1,
+     LinkedList<Integer> li2)
+For example, a call to paste with arguments [1,2,4] and [6,8,9] would return [1, 2, 4, 6, 8, 9]. */ 
